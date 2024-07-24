@@ -1,5 +1,21 @@
 import Image from "next/image";
+import HomeHeader from "./components/HomeHeader";
+import HomeSearch from "./components/HomeSearch";
 
 export default function Home() {
-  return <h1 className="text-red-500">Home</h1>;
+  return (
+    <>
+      <HomeHeader />
+      <div className="flex flex-col items-center mt-24">
+        <Image
+          src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg"
+          alt="Google Logo"
+          width={300}
+          height={100}
+          style={{ width: "auto" }}
+        />
+        <HomeSearch />
+      </div>
+    </>
+  );
 }
