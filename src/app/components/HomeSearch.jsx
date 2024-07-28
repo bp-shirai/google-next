@@ -1,9 +1,8 @@
 "use client";
 
-import React from "react";
+import { useState } from "react";
 import { AiOutlineSearch } from "react-icons/ai";
 import { BsFillMicFill } from "react-icons/bs";
-import { useState } from "react";
 import { useRouter } from "next/navigation";
 
 export default function HomeSearch() {
@@ -25,7 +24,6 @@ export default function HomeSearch() {
     router.push(`/search/web?searchTerm=${response}`);
     setRandomSearchLoading(false);
   };
-
   return (
     <>
       <form
